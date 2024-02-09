@@ -1,0 +1,17 @@
+{
+  "name": "node-build-talk",
+  "version": "1.4.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build --cache-to type=inline --cache-from dwilson6/node-build-talk -t dwilson6/node-build-talk .",
+    "build-without-registry-cache": "docker build -t node-build-talk .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}
